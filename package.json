@@ -6,13 +6,13 @@
   "scripts": {
     "install-server": "npm install --prefix server",
     "install-client": "npm install --prefix client",
-    "install": "start npm run install-server && start npm run install-client",
+    "install": "npm run install-server && start npm run install-client",
     "server": "npm run watch --prefix server",
     "client": "npm start --prefix client",
-    "watch": "start npm run server & start npm run client ",
+    "watch": "npm run server & start npm run client ",
     "deploy": "npm run build --prefix client && npm start --prefix server",
     "deploy_cluster": "npm run build --prefix client && npm run cluster --prefix server",
-    "test": "start npm  test --prefix server && start npm test --prefix client "
+    "test": "npm  test --prefix server && start npm test --prefix client "
   },
   "keywords": [],
   "author": "",
