@@ -1,0 +1,18 @@
+{
+    "env": {
+        "node": true,
+        "commonjs": true,
+        "es2021": true
+    },
+    "extends": ["prettier","standard-with-typescript"],
+    "parserOptions": {
+        "ecmaVersion": "latest"
+    },
+    "rules": {
+        "@typescript-eslint/no-misused-promises": [2, {
+            "checksVoidReturn": {
+              "attributes": false
+            }
+          }]
+    }
+}
